@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest Dream - Real Estate</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="top-background"></div>
+    <header>
+        <div class="logo">
+            <a href="Index.html">
+                <img src="images/sa (3).png" alt="logo">
+            </a>
+        </div>
+        <div class="Snam">Nest Dream</div>
+        <div class="menu-toggle"></div> 
+        <div class="navi">
+            <nav>
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="APARTMENT.html">APARTMENT</a></li>
+                    <li><a href="Land.html">LANDS</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li class="active"><a href="Contactus.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <div class="container">
+        <h1 class="heading intro">Contact Us</h1>
+
+        <div class="contact-info">
+            <div class="contact-card">
+                <img src="images/bvc.jpg" alt="Headquarters">
+                <h3>Headquarters</h3>
+                <p>📞 Phone: +1 234 567 890</p>
+                <p>📠 Fax: +1 987 654 321</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: +94766272891</p>
+                <p><a href="#" target="_blank" style="color: white;"><i class="fab fa-facebook"></i> Facebook</a></p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12546.66779589603!2d81.11934467913117!3d6.1551466007282745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae6bd29bb4dc341%3A0x5632fdf2877abd7a!2sMagam%20Ruhunupura%20International%20Convention%20Centre!5e0!3m2!1sen!2slk!4v1741315513595!5m2!1sen!2slk"></iframe>
+        </div>
+
+        <div class="reviews">
+            <h2 style="color: #ffffff;filter: drop-shadow(0 2px 6px rgb(0, 0, 0));">User Reviews</h2>
+            <div class="review-slider">
+                <section class="profiles">
+                            <div class="avatar"  style="--bg-img:url(https://picsum.photos/id/112/300/200)">
+                              <div class="avatar-img">
+                                  <img src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-1-trans.png">
+                              </div>
+                              <p>Sandra</p>
+                              <br>
+                              <p>"Best deals Availeble.⭐⭐"</p>
+                            </div>
+
+                            <div class="avatar" style="--bg-img:url(https://picsum.photos/id/54/300/200)">
+                                <div class="avatar-img">
+                                  <img src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-8-trans.png">
+                                </div>
+                                <p>David V.</p><br>
+                                <p>"Easy to use, found my dream home quickly!"</p> 
+                            </div>
+                              
+                              
+                            <div class="avatar" style="--bg-img:url(https://picsum.photos/id/48/300/200)">
+                                <div class="avatar-img">
+                                  <img src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-3-trans.png">
+                                </div>
+                                <p>Ronald</p>
+                                <br>
+                                <p>"Best real estate site! Hassle-free and user-friendly"</p>
+                            </div>
+                              
+                            <div class="avatar" style="--bg-img:url(https://picsum.photos/id/210/300/200)">
+                                <div class="avatar-img">
+                                  <img src="https://raw.githubusercontent.com/cbolson/icodethis-challenges/main/assets/images/profile-5-trans.png">
+                                </div>
+                                <p>Elizabeth</p><br>
+                                <p>"Quick response and very friendly team!"</p>
+                            </div>
+                </section>                  
+            </div>
+        </div>
+
+        <h2 style="color: #ece6e6; margin-top: 30px;  filter: drop-shadow(0 2px 6px rgb(0, 0, 0));">Sales Team</h2>
+        <div class="sales-team">
+            <div class="sales-card">
+                <img src="images/s1.png" alt="Sales Officer">
+                <h3>Sanjaya Dilshan</h3>
+                <p>📧 jane@example.com</p>
+            </div>
+            <div class="sales-card">
+                <img src="images/s2.png" alt="Sales Officer">
+                <h3>Damith Chathuranga</h3>
+                <p>📧 mike@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            if (name === '' || email === '' || subject === '' || message === '') {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            alert("Form submitted successfully!");
+            this.reset();
+        });
+
+        // function initMap() {
+        //     var map = new google.maps.Map(document.getElementById('map'), {
+        //         center: { lat: -34.397, lng: 150.644 },
+        //         zoom: 8,
+        //     });
+
+        //     var marker = new google.maps.Marker({
+        //         position: { lat: -34.397, lng: 150.644 },
+        //         map: map,
+        //         title: 'Your Location'
+        //     });
+        // }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <br>
+    <br>
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/kmk.png" alt="Nest Dream Logo">
+                <p >Nest Dream (Pvt) Ltd.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>GET CONNECTED</h4>
+                    <ul>
+                        <li><a href="Index.html">HOME</a></li>
+                        <li><a href="APARTMENT.html">APARTMENT</a></li>
+                        <li><a href="Land.html"></a>LANDS</a></li>
+                        <li><a href="#" onclick="goToLastVisited()">RECENT VISIT</a></li>   
+                    </ul>
+                </div>
+                <div>
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4>SOCIAL</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://web.facebook.com/realestateband">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"> 
+            <p style="color:white ;">©2025 Nest Dream| <a href="#" id="open-terms">Terms</a> | <a href="#" id="open-privacy">Privacy</a></p>
+
+        </div>
+
+    </footer>
+        
+        <!-- Modal Popup -->
+        <div id="terms-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Terms and Conditions</h2>
+                <p>
+                    Terms & Conditions
+                    Welcome to Nest Dream, your trusted partner in real estate. By using our website, you agree to the following terms:<br>
+
+                    ✅ Authentic Listings – We ensure accurate property details, but availability and pricing are subject to change.<br>
+                    ✅ User Responsibility – Buyers and sellers must verify legal documents and property details before transactions.<br>
+                    ✅ Privacy & Security – Your data is safe with us; we don’t share personal information without consent.<br>
+                    By continuing to use our website, you accept these terms. Happy home hunting with Nest Dream! 🏡✨<br>
+                </p>
+                
+            </div>
+        </div>
+
+        <div id="privacy-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Privacy Policy</h2>
+                <p>
+                    Terms & Conditions
+                    Welcome to Nest Dream, your trusted partner in real estate. By using our website, you agree to the following terms:<br>
+
+                    ✅ Authentic Listings – We ensure accurate property details, but availability and pricing are subject to change.<br>
+                    ✅ User Responsibility – Buyers and sellers must verify legal documents and property details before transactions.<br>
+                    ✅ Privacy & Security – Your data is safe with us; we don’t share personal information without consent.<br>
+
+                    By continuing to use our website, you accept these terms. Happy home hunting with Nest Dream! 🏡✨<br>
+                </p>
+                
+            </div>
+        </div> 
+     
+   
+    <script src="script.js"></script>
+</body>
+</html>

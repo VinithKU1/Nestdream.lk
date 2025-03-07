@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest Dream - Real Estate</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="top-background"></div>
+    <header>
+        <div class="logo"><img src="images/sa (3).png" alt="logo"></div>
+        <div class="Snam">Nest Dream</div>
+        <div class="menu-toggle"></div> <!-- Hamburger Menu -->
+        <div class="navi">
+            <nav>
+                <ul>
+                    <li ><a href="Index.html">HOME</a></li>
+                    <li ><a href="APARTMENT.html">APARTMENT</a></li>
+                    <li class="active"><a href="Land.html">LANDS</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="Contactus.html">CONTACT US</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br><br><br><br><br>
+    <section class="hero">
+        <div class="InputContainer">
+            <input placeholder="Search.." id="input" class="input" name="text" type="text" oninput="searchProperty()">
+        </div>
+    </section>
+
+    <section class="property-list">
+        <div class="property-card" onclick="expandCard('images/l1.jpg','Beachfront Land in Mirissa', 'Perfect spot for a resort or villa.', 'Mirissa, Sri Lanka', 'Rs 8,500,000', '+94772153397')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/L1.jpg" alt="House at Galle">
+            <h3>Beachfront Land in Mirissa</h3>
+            <p>Rs 8,500,000</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/SA (12).jpg','Agricultural Land in Anuradhapura', 'Fertile land suitable for farming.', 'Anuradhapura, Sri Lanka', 'Rs 4,300,000', '+94719177349')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/SA (12).jpg" alt="Land at Galle">
+            <h3>Agricultural Land in Anuradhapura</h3>
+            <p>Rs 4,300,000</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/l3.jpg','Lakeside Land in Nuwara Eliya', 'Great location for a holiday retreat.', 'Nuwara Eliya, Sri Lanka', 'Rs 9,900,000', '+94701991187')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/l3.jpg" alt="House at Homagama">
+            <h3>Lakeside Land in Nuwara Eliya</h3>
+            <p>Rs 9,900,000</p>
+        </div>
+    </section>
+    
+    <section class="property-list">
+        <div class="property-card" onclick="expandCard('images/l4.jpg','Investment Land in Negombo', 'Prime land for commercial development.', 'Negombo, Sri Lanka', 'Rs 11,500,000', '+94764870215')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/l4.jpg" alt="House at Galle">
+            <h3>Investment Land in Negombo</h3>
+            <p>Rs 14,000,123</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/l5.jpg','Residential Land in Batticaloa', 'Peaceful neighborhood with easy access to amenities.', 'Batticaloa, Sri Lanka', 'Rs 5,750,000', '+94753536455')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/l5.jpg" alt="Residential Land in Batticaloa">
+            <h3>Residential Land in Batticaloa</h3>
+            <p>Rs 11,500,000</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/L6.jpg','Mountain View Plot in Badulla', 'Serene location for a luxury home.', 'Badulla, Sri Lanka', 'Rs 6,900,000', '+94718933726')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/L6.jpg" alt="House at Homagama">
+            <h3>Mountain View Plot in Badulla</h3>
+            <p>Rs 6,900,000</p>
+        </div>
+    </section>
+    
+    <section class="property-list">
+        <div class="property-card" onclick="expandCard('images/L7.jpg', 'Coastal Land in Trincomalee', 'Close to the beach, ideal for a resort.', 'Trincomalee, Sri Lanka', 'Rs 13,400,000', '+94776557185')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/L7.jpg" alt="Coastal Land in Trincomalee">
+            <h3>Coastal Land in Trincomalee</h3>
+            <p>Rs 13,400,000</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/L8.jpg', 'Forest View Land in Ella', 'Surrounded by nature, perfect for eco-tourism.', 'Ella, Sri Lanka', 'Rs 7,250,000', '+94787497780')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/L8.jpg" alt="Land at Galle">
+            <h3>Forest View Land in Ella</h3>
+            <p>Rs 7,250,000</p>
+        </div>
+        <div class="property-card" onclick="expandCard('images/l9.jpg', 'Land at Galle', 'Spacious land suitable for building.', 'Galle, Sri Lanka', 'Rs 12,000,123', '+94755161130')">
+            <div class="badge">MOST VISITED</div>
+            <img src="images/l9.jpg" alt="Land at Galle">
+            <h3>LAND AT GALLE</h3>
+            <p>Rs 12,000,123</p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/kmk.png" alt="Nest Dream Logo">
+                <p>Nest Dream (Pvt) Ltd.</p>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h4>GET CONNECTED</h4>
+                    <ul>
+                        <li><a href="Index.html">HOME</a></li>
+                        <li><a href="APARTMENT.html">APARTMENT</a></li>
+                        <li><a href="Land.html">LANDS</a></li>
+                        <li><a href="#" onclick="goToLastVisited()">RECENT VISIT</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">About Us</a></li>
+
+                    </ul>
+                </div>
+                <div>
+                    <h4>SOCIAL</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://web.facebook.com/realestateband">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"> 
+            <p style="color:white ;">©2025 Nest Dream| <a href="#" id="open-terms">Terms</a> | <a href="#" id="open-privacy">Privacy</a></p>
+
+        </div>
+
+    </footer>
+        
+    <!-- Modal Popup -->
+    <div id="terms-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Terms and Conditions</h2>
+                <p>
+                    Terms & Conditions
+                    Welcome to Nest Dream, your trusted partner in real estate. By using our website, you agree to the following terms:<br>
+
+                    ✅ Authentic Listings – We ensure accurate property details, but availability and pricing are subject to change.<br>
+                    ✅ User Responsibility – Buyers and sellers must verify legal documents and property details before transactions.<br>
+                    ✅ Privacy & Security – Your data is safe with us; we don’t share personal information without consent.<br>
+                    By continuing to use our website, you accept these terms. Happy home hunting with Nest Dream! 🏡✨<br>
+                </p>
+                <!-- Add full terms here -->
+            </div>
+    </div>
+
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Privacy Policy</h2>
+                <p>
+                    Terms & Conditions
+                    Welcome to Nest Dream, your trusted partner in real estate. By using our website, you agree to the following terms:<br>
+
+                    ✅ Authentic Listings – We ensure accurate property details, but availability and pricing are subject to change.<br>
+                    ✅ User Responsibility – Buyers and sellers must verify legal documents and property details before transactions.<br>
+                    ✅ Privacy & Security – Your data is safe with us; we don’t share personal information without consent.<br>
+
+                    By continuing to use our website, you accept these terms. Happy home hunting with Nest Dream! 🏡✨<br>
+                </p>
+        </div>
+    </div> 
+
+    
+
+    <!-- Expanded Property Card -->
+    <div id="expanded-card" class="expanded-card">
+            <span class="close" onclick="closeCard()">&times;</span>
+            <div class="Eximg">
+                <img id="expanded-img" src="" alt="Property Image">
+            </div>
+            <div class="Excontent">
+                <h3 id="expanded-title"></h3>
+                <p id="expanded-description"></p>
+                <p><strong>Location:</strong> <span id="expanded-location"></span></p>
+                <p><strong>Price:</strong> <span id="expanded-price"></span></p>
+                <p class="agent"><strong>Agent:</strong> <span id="expanded-agent"></span></p>
+                <a href="tel:077171" id="call-button" class="button">Call Agent</a>
+            </div>
+     </div>
+
+    <div class="no-results" id="no-results">
+        <p>No properties found</p>
+    </div>
+  
+    <script>
+        function expandCard(imgSrc, title, description, location, price, agentPhone) {
+            document.getElementById('expanded-img').src = imgSrc;
+            document.getElementById('expanded-title').innerText = title;
+            document.getElementById('expanded-description').innerText = description;
+            document.getElementById('expanded-location').innerText = location;
+            document.getElementById('expanded-price').innerText = price;
+            document.getElementById('expanded-agent').innerText = agentPhone;
+
+            // Set call button href but prevent default behavior
+            let callButton = document.getElementById('call-button');
+            callButton.href = 'tel:' + agentPhone;
+            
+            // Add onclick event to confirm before calling
+            callButton.onclick = function(event) {
+                event.preventDefault(); // Stop immediate call
+                let confirmCall = confirm("Do you want to call Agent: " + agentPhone + "?");
+                if (confirmCall) {
+                    window.location.href = 'tel:' + agentPhone; // Proceed with call
+                }
+            };
+
+            document.getElementById('expanded-card').classList.add('active');
+        }
+
+
+        function closeCard() {
+            document.getElementById('expanded-card').classList.remove('active');
+        }
+
+        // Close on outside click
+        document.addEventListener('click', function(event) {
+            let card = document.getElementById('expanded-card');
+            if (!card.contains(event.target) && !event.target.closest('.property-card')) {
+                closeCard();
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let noResultsDiv = document.getElementById("no-results");
+
+            // Hide "No results" div on page load
+            noResultsDiv.style.display = "none";
+
+            function searchProperty() {
+                let input = document.getElementById("input").value.toLowerCase().trim();
+                let propertyCards = document.querySelectorAll(".property-card");
+                let found = false;
+
+                propertyCards.forEach(card => {
+                    let title = card.querySelector("h3").innerText.toLowerCase();
+                    if (title.includes(input)) {
+                        card.style.display = "block";  // Show matching properties
+                        found = true;
+                    } else {
+                        card.style.display = "none";   // Hide non-matching properties
+                    }
+                });
+
+                // Show or hide "No results found"
+                if (found) {
+                    noResultsDiv.style.display = "none";
+                } else {
+                    noResultsDiv.style.display = "flex";  // Show when no match
+                }
+            }
+
+            // Attach event listener to input field
+            document.getElementById("input").addEventListener("input", searchProperty);
+        });
+
+        
+        window.addEventListener("resize", function() {
+            let inputContainer = document.querySelector(".InputContainer");
+            if (window.innerWidth < 600) {
+                inputContainer.style.margin = "0 auto";
+            } else {
+                inputContainer.style.margin = "";
+            }
+        });
+        </script>
+
+
+     
+   
+    <script src="script.js"></script>
+</body>
+</html>
